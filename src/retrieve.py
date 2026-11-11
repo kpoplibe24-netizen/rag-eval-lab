@@ -3,7 +3,9 @@ import chromadb
 from ingest import build_chunks
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
-client = chromadb.PersistentClient(path="chroma_db")
+client = chromadb.PersistentClient(
+    path=r"C:\rag-eval-lab-chroma"
+)
 
 
 def build_index(max_words: int, docs_dir: str = "data/docs"):
