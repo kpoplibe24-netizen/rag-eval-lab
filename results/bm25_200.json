@@ -1,0 +1,715 @@
+{
+  "summary": {
+    "method": "bm25",
+    "chunk_size": 200,
+    "n_questions": 100,
+    "hit@1": 0.56,
+    "hit@3": 0.76,
+    "hit@5": 0.84,
+    "hit@10": 0.9,
+    "mrr": 0.6732,
+    "file_hit@5": 0.93
+  },
+  "details": [
+    {
+      "question": "How can I return a custom JSON response in FastAPI?",
+      "file": "advanced/response-directly.md",
+      "heading": "Return a Response Directly",
+      "rank": 8,
+      "top_result": "advanced/response-directly.md | Notes"
+    },
+    {
+      "question": "Why are FastAPI trailing slash paths resolved to HTTP localhost instead of my secure domain?",
+      "file": "advanced/behind-a-proxy.md",
+      "heading": "Redirects with HTTPS",
+      "rank": null,
+      "top_result": "tutorial/cors.md | Origin"
+    },
+    {
+      "question": "How can I apply a dependency to every endpoint in my FastAPI application?",
+      "file": "tutorial/dependencies/global-dependencies.md",
+      "heading": "Global Dependencies",
+      "rank": 5,
+      "top_result": "advanced/opentelemetry.md | Other monitoring services"
+    },
+    {
+      "question": "How does the `extra` configuration behave when using multiple cookie definition models?",
+      "file": "tutorial/cookie-param-models.md",
+      "heading": "Combine Parameter Models",
+      "rank": 1,
+      "top_result": "tutorial/cookie-param-models.md | Combine Parameter Models"
+    },
+    {
+      "question": "How do I make a single request body parameter appear nested under its own key in FastAPI?",
+      "file": "tutorial/body-multiple-params.md",
+      "heading": "Embed a single body parameter",
+      "rank": 2,
+      "top_result": "tutorial/body-multiple-params.md | Recap"
+    },
+    {
+      "question": "How does `SecurityScopes` collect all security scopes declared in a dependency tree?",
+      "file": "advanced/security/oauth2-scopes.md",
+      "heading": "More details about `SecurityScopes`",
+      "rank": 1,
+      "top_result": "advanced/security/oauth2-scopes.md | More details about `SecurityScopes`"
+    },
+    {
+      "question": "Can I define more than one response for a FastAPI path operation?",
+      "file": "advanced/path-operation-advanced-configuration.md",
+      "heading": "Additional Responses",
+      "rank": null,
+      "top_result": "tutorial/header-params.md | Duplicate headers"
+    },
+    {
+      "question": "What is the name for when my app sends requests to a user's app to notify them of an event?",
+      "file": "advanced/openapi-webhooks.md",
+      "heading": "OpenAPI Webhooks",
+      "rank": 1,
+      "top_result": "advanced/openapi-webhooks.md | OpenAPI Webhooks"
+    },
+    {
+      "question": "How does FastAPI recognize and handle a path operation that returns a `Response` object directly?",
+      "file": "tutorial/response-model.md",
+      "heading": "Return a Response Directly",
+      "rank": null,
+      "top_result": "advanced/response-directly.md | How a Response Model Works"
+    },
+    {
+      "question": "How does FastAPI 0.110.0 affect automatic exception forwarding from `yield` dependencies that catch but don't re-raise an error?",
+      "file": "advanced/advanced-dependencies.md",
+      "heading": "Dependencies with `yield` and `except`, Technical Details",
+      "rank": 1,
+      "top_result": "advanced/advanced-dependencies.md | Dependencies with `yield` and `except`, Technical Details"
+    },
+    {
+      "question": "How can I define a custom response type in FastAPI?",
+      "file": "advanced/custom-response.md",
+      "heading": "Custom response class",
+      "rank": null,
+      "top_result": "advanced/response-directly.md | Notes"
+    },
+    {
+      "question": "What automatic processing is not applied when a `Response` object is returned directly?",
+      "file": "advanced/response-directly.md",
+      "heading": "Notes",
+      "rank": 5,
+      "top_result": "advanced/custom-response.md | Return a `Response`"
+    },
+    {
+      "question": "How do I start a minimal FastAPI application and identify the local URL where the server is running?",
+      "file": "tutorial/first-steps.md",
+      "heading": "First Steps",
+      "rank": 5,
+      "top_result": "advanced/strict-content-type.md | Example Attack"
+    },
+    {
+      "question": "What is the effect of using Depends with scope='function' versus the default request scope when using yield?",
+      "file": "advanced/advanced-dependencies.md",
+      "heading": "Dependencies with `yield` and `scope`",
+      "rank": 1,
+      "top_result": "advanced/advanced-dependencies.md | Dependencies with `yield` and `scope`"
+    },
+    {
+      "question": "Do I have to invoke FastAPI path operation functions myself, or does the framework handle that?",
+      "file": "tutorial/dependencies/index.md",
+      "heading": "Simple usage",
+      "rank": 1,
+      "top_result": "tutorial/dependencies/index.md | Simple usage"
+    },
+    {
+      "question": "How can I specify a custom operationId for an endpoint in FastAPI?",
+      "file": "advanced/path-operation-advanced-configuration.md",
+      "heading": "OpenAPI operationId",
+      "rank": 2,
+      "top_result": "advanced/path-operation-advanced-configuration.md | Using the *path operation function* name as the operationId"
+    },
+    {
+      "question": "How do I add a title metadata field to a path parameter in FastAPI?",
+      "file": "tutorial/path-params-numeric-validations.md",
+      "heading": "Declare metadata",
+      "rank": 3,
+      "top_result": "tutorial/query-params-str-validations.md | Use `Annotated` in the type for the `q` parameter"
+    },
+    {
+      "question": "How can I replace the default validation error response with my own handler?",
+      "file": "tutorial/handling-errors.md",
+      "heading": "Override request validation exceptions",
+      "rank": 1,
+      "top_result": "tutorial/handling-errors.md | Override request validation exceptions"
+    },
+    {
+      "question": "How can I add a custom header that shows the processing time for each request?",
+      "file": "tutorial/middleware.md",
+      "heading": "Before and after the `response`",
+      "rank": 1,
+      "top_result": "tutorial/middleware.md | Before and after the `response`"
+    },
+    {
+      "question": "What does FastAPI do with a dependency that uses yield internally?",
+      "file": "tutorial/dependencies/dependencies-with-yield.md",
+      "heading": "What are \"Context Managers\"",
+      "rank": 4,
+      "top_result": "tutorial/dependencies/dependencies-with-yield.md | Using context managers in dependencies with `yield`"
+    },
+    {
+      "question": "How do I import router modules from a subpackage within my project?",
+      "file": "tutorial/bigger-applications.md",
+      "heading": "How the importing works",
+      "rank": 1,
+      "top_result": "tutorial/bigger-applications.md | How the importing works"
+    },
+    {
+      "question": "How can I set cookies when I return a response object directly?",
+      "file": "advanced/response-cookies.md",
+      "heading": "Return a `Response` directly",
+      "rank": 1,
+      "top_result": "advanced/response-cookies.md | Return a `Response` directly"
+    },
+    {
+      "question": "How do I declare a field as a list of strings in a model?",
+      "file": "tutorial/body-nested-models.md",
+      "heading": "Declare a `list` with a type parameter",
+      "rank": 1,
+      "top_result": "tutorial/body-nested-models.md | Declare a `list` with a type parameter"
+    },
+    {
+      "question": "How can I send a sequence of JSON objects from a FastAPI endpoint without returning the entire list at once?",
+      "file": "tutorial/stream-json-lines.md",
+      "heading": "Stream JSON Lines with FastAPI",
+      "rank": null,
+      "top_result": "tutorial/body-nested-models.md | Attributes with lists of submodels"
+    },
+    {
+      "question": "What type annotation should I use to accept several files uploaded under the same form field in FastAPI?",
+      "file": "tutorial/request-files.md",
+      "heading": "Multiple File Uploads",
+      "rank": 6,
+      "top_result": "tutorial/request-files.md | Recap"
+    },
+    {
+      "question": "Where should I place multiple example definitions so they appear in the Swagger UI for a particular path operation?",
+      "file": "tutorial/schema-extra-example.md",
+      "heading": "OpenAPI-specific `examples`",
+      "rank": 1,
+      "top_result": "tutorial/schema-extra-example.md | OpenAPI-specific `examples`"
+    },
+    {
+      "question": "How do I add a custom description and example to a response while still using a response_model in FastAPI?",
+      "file": "advanced/additional-responses.md",
+      "heading": "Combining information",
+      "rank": 2,
+      "top_result": "tutorial/response-model.md | `response_model` Priority"
+    },
+    {
+      "question": "What imports are required to use `Annotated` with FastAPI query parameters, and from which FastAPI version is it supported?",
+      "file": "tutorial/query-params-str-validations.md",
+      "heading": "Import `Query` and `Annotated`",
+      "rank": 1,
+      "top_result": "tutorial/query-params-str-validations.md | Import `Query` and `Annotated`"
+    },
+    {
+      "question": "How can I asynchronously read the contents of an uploaded file inside a FastAPI async path operation?",
+      "file": "tutorial/request-files.md",
+      "heading": "`UploadFile`",
+      "rank": 1,
+      "top_result": "tutorial/request-files.md | `UploadFile`"
+    },
+    {
+      "question": "How can I document an external API that my service will call back to in the OpenAPI spec?",
+      "file": "advanced/openapi-callbacks.md",
+      "heading": "OpenAPI Callbacks",
+      "rank": 2,
+      "top_result": "advanced/openapi-callbacks.md | Write the callback documentation code"
+    },
+    {
+      "question": "How can I use middleware in FastAPI to execute custom logic before a request reaches a path operation and after its response is generated?",
+      "file": "tutorial/middleware.md",
+      "heading": "Middleware",
+      "rank": 2,
+      "top_result": "tutorial/middleware.md | Before and after the `response`"
+    },
+    {
+      "question": "How can I register routes from separate `APIRouter` instances with the main FastAPI application?",
+      "file": "tutorial/bigger-applications.md",
+      "heading": "Include the `APIRouter`s for `users` and `items`",
+      "rank": 1,
+      "top_result": "tutorial/bigger-applications.md | Include the `APIRouter`s for `users` and `items`"
+    },
+    {
+      "question": "How can I link to a static CSS file from within a template using FastAPI?",
+      "file": "advanced/templates.md",
+      "heading": "Templates and static files",
+      "rank": 1,
+      "top_result": "advanced/templates.md | Templates and static files"
+    },
+    {
+      "question": "When is it appropriate to use raw_data instead of data for a ServerSentEvent?",
+      "file": "tutorial/server-sent-events.md",
+      "heading": "Raw Data",
+      "rank": 1,
+      "top_result": "tutorial/server-sent-events.md | Raw Data"
+    },
+    {
+      "question": "How do I limit allowed host headers and enable www redirection using FastAPI middleware?",
+      "file": "advanced/middleware.md",
+      "heading": "`TrustedHostMiddleware`",
+      "rank": 1,
+      "top_result": "advanced/middleware.md | `TrustedHostMiddleware`"
+    },
+    {
+      "question": "How can I enforce a maximum length on an optional query parameter using Annotated?",
+      "file": "tutorial/query-params-str-validations.md",
+      "heading": "Add `Query` to `Annotated` in the `q` parameter",
+      "rank": 1,
+      "top_result": "tutorial/query-params-str-validations.md | Add `Query` to `Annotated` in the `q` parameter"
+    },
+    {
+      "question": "How do I generate a full URL for a path operation inside a Jinja2 template?",
+      "file": "advanced/templates.md",
+      "heading": "Template `url_for` Arguments",
+      "rank": 1,
+      "top_result": "advanced/templates.md | Template `url_for` Arguments"
+    },
+    {
+      "question": "What is the simplest way to serve a directory of static assets in FastAPI?",
+      "file": "tutorial/static-files.md",
+      "heading": "Use `StaticFiles`",
+      "rank": null,
+      "top_result": "tutorial/frontend.md | Serve a Frontend"
+    },
+    {
+      "question": "What types of data and special formats does FastAPI support for validation through Pydantic?",
+      "file": "features.md",
+      "heading": "Validation",
+      "rank": 3,
+      "top_result": "tutorial/response-model.md | FastAPI Data Filtering"
+    },
+    {
+      "question": "How can I configure FastAPI to use HTMLResponse as the default for all path operations?",
+      "file": "advanced/custom-response.md",
+      "heading": "Default response class",
+      "rank": 1,
+      "top_result": "advanced/custom-response.md | Default response class"
+    },
+    {
+      "question": "Why does FastAPI fail when I annotate a handler with a union that includes a type that isn\u2019t a Pydantic model?",
+      "file": "tutorial/response-model.md",
+      "heading": "Invalid Return Type Annotations",
+      "rank": 1,
+      "top_result": "tutorial/response-model.md | Invalid Return Type Annotations"
+    },
+    {
+      "question": "How can I swap out an external authentication dependency for a mock version in my FastAPI tests?",
+      "file": "advanced/testing-dependencies.md",
+      "heading": "Use cases: external service",
+      "rank": 1,
+      "top_result": "advanced/testing-dependencies.md | Use cases: external service"
+    },
+    {
+      "question": "Where can I access the raw OpenAPI JSON that FastAPI generates?",
+      "file": "tutorial/first-steps.md",
+      "heading": "Check the `openapi.json`",
+      "rank": 1,
+      "top_result": "tutorial/first-steps.md | Check the `openapi.json`"
+    },
+    {
+      "question": "How do I add the scopes received in the token request to the JWT returned by the token endpoint?",
+      "file": "advanced/security/oauth2-scopes.md",
+      "heading": "JWT token with scopes",
+      "rank": 1,
+      "top_result": "advanced/security/oauth2-scopes.md | JWT token with scopes"
+    },
+    {
+      "question": "How does the request encoding differ between HTML form submissions with files and those without files in FastAPI?",
+      "file": "tutorial/request-files.md",
+      "heading": "What is \"Form Data\"",
+      "rank": 2,
+      "top_result": "tutorial/request-form-models.md | Form Models and Files"
+    },
+    {
+      "question": "Why do I encounter a 'Task attached to a different loop' RuntimeError when using async calls in my FastAPI tests?",
+      "file": "advanced/async-tests.md",
+      "heading": "Other Asynchronous Function Calls",
+      "rank": 1,
+      "top_result": "advanced/async-tests.md | Other Asynchronous Function Calls"
+    },
+    {
+      "question": "How can I replace an existing item with a PUT request and ensure complex types like datetime are JSON\u2011compatible?",
+      "file": "tutorial/body-updates.md",
+      "heading": "Update replacing with `PUT`",
+      "rank": 1,
+      "top_result": "tutorial/body-updates.md | Update replacing with `PUT`"
+    },
+    {
+      "question": "In a dependency that yields, how should I re\u2011raise a caught exception to preserve the original error response?",
+      "file": "tutorial/dependencies/dependencies-with-yield.md",
+      "heading": "Always `raise` in Dependencies with `yield` and `except`",
+      "rank": 1,
+      "top_result": "tutorial/dependencies/dependencies-with-yield.md | Always `raise` in Dependencies with `yield` and `except`"
+    },
+    {
+      "question": "Where can I view the request and response schemas generated from my FastAPI models in the interactive API documentation?",
+      "file": "advanced/generate-clients.md",
+      "heading": "API Docs",
+      "rank": 3,
+      "top_result": "tutorial/body.md | Automatic docs"
+    },
+    {
+      "question": "What is dependency injection in FastAPI and why is it useful?",
+      "file": "tutorial/dependencies/index.md",
+      "heading": "What is \"Dependency Injection\"",
+      "rank": 1,
+      "top_result": "tutorial/dependencies/index.md | What is \"Dependency Injection\""
+    },
+    {
+      "question": "How do I create and use a Settings dependency in my FastAPI application?",
+      "file": "advanced/settings.md",
+      "heading": "The main app file",
+      "rank": 1,
+      "top_result": "advanced/settings.md | The main app file"
+    },
+    {
+      "question": "How can I serve a compiled frontend directory with FastAPI?",
+      "file": "tutorial/frontend.md",
+      "heading": "Serve a Frontend",
+      "rank": 3,
+      "top_result": "tutorial/frontend.md | Frontend"
+    },
+    {
+      "question": "What decorator should I use to handle GET requests to the root path?",
+      "file": "tutorial/first-steps.md",
+      "heading": "Define a *path operation decorator*",
+      "rank": 1,
+      "top_result": "tutorial/first-steps.md | Define a *path operation decorator*"
+    },
+    {
+      "question": "What are the steps of the OAuth2 password flow for obtaining a token in FastAPI?",
+      "file": "tutorial/security/first-steps.md",
+      "heading": "The `password` flow",
+      "rank": 1,
+      "top_result": "tutorial/security/first-steps.md | The `password` flow"
+    },
+    {
+      "question": "How can I convert a Pydantic model to a JSON\u2011compatible dict with FastAPI?",
+      "file": "tutorial/encoder.md",
+      "heading": "JSON Compatible Encoder",
+      "rank": 1,
+      "top_result": "tutorial/encoder.md | JSON Compatible Encoder"
+    },
+    {
+      "question": "In FastAPI, when multiple middlewares are added, which one runs first on an incoming request?",
+      "file": "tutorial/middleware.md",
+      "heading": "Multiple middleware execution order",
+      "rank": 1,
+      "top_result": "tutorial/middleware.md | Multiple middleware execution order"
+    },
+    {
+      "question": "How can I use the response_class parameter in a FastAPI path operation decorator to return a non-JSON response?",
+      "file": "advanced/custom-response.md",
+      "heading": "Custom Response - HTML, Stream, File, others",
+      "rank": 2,
+      "top_result": "advanced/custom-response.md | HTML Response"
+    },
+    {
+      "question": "Why does FastAPI ignore X-Forwarded-For and similar headers unless a trusted proxy is configured?",
+      "file": "advanced/behind-a-proxy.md",
+      "heading": "Proxy Forwarded Headers",
+      "rank": 2,
+      "top_result": "advanced/behind-a-proxy.md | How Proxy Forwarded Headers Work"
+    },
+    {
+      "question": "Can FastAPI automatically convert request headers into a Pydantic model?",
+      "file": "tutorial/header-param-models.md",
+      "heading": "Header Parameters with a Pydantic Model",
+      "rank": 1,
+      "top_result": "tutorial/header-param-models.md | Header Parameters with a Pydantic Model"
+    },
+    {
+      "question": "What must I do to make a Pydantic model JSON\u2011serializable before returning it in a JSONResponse?",
+      "file": "advanced/response-directly.md",
+      "heading": "Using the `jsonable_encoder` in a `Response`",
+      "rank": 2,
+      "top_result": "advanced/response-directly.md | Return a Response Directly"
+    },
+    {
+      "question": "How do I give a query parameter a default string value while keeping it optional?",
+      "file": "tutorial/query-params-str-validations.md",
+      "heading": "Default values",
+      "rank": 8,
+      "top_result": "tutorial/query-params-str-validations.md | Required parameters and `None`"
+    },
+    {
+      "question": "How can I move my FastAPI configuration into a separate Python module?",
+      "file": "advanced/settings.md",
+      "heading": "Settings in another module",
+      "rank": null,
+      "top_result": "advanced/advanced-python-types.md | Using `Union` or `Optional`"
+    },
+    {
+      "question": "What is a way to share security and dependency logic across many FastAPI routes without repeating code?",
+      "file": "tutorial/security/get-current-user.md",
+      "heading": "Code size",
+      "rank": null,
+      "top_result": "tutorial/dependencies/index.md | What is \"Dependency Injection\""
+    },
+    {
+      "question": "Will FastAPI return fields that have default values when they are explicitly provided in the request?",
+      "file": "tutorial/response-model.md",
+      "heading": "Data with the same values as the defaults",
+      "rank": 1,
+      "top_result": "tutorial/response-model.md | Data with the same values as the defaults"
+    },
+    {
+      "question": "How can I apply a PATCH request to update only the fields supplied by the client on a SQLModel object?",
+      "file": "tutorial/sql-databases.md",
+      "heading": "Update a Hero with `HeroUpdate`",
+      "rank": 1,
+      "top_result": "tutorial/sql-databases.md | Update a Hero with `HeroUpdate`"
+    },
+    {
+      "question": "What should I do if using regular dataclasses breaks FastAPI's generated OpenAPI docs?",
+      "file": "advanced/dataclasses.md",
+      "heading": "Dataclasses in Nested Data Structures",
+      "rank": 2,
+      "top_result": "advanced/dataclasses.md | Using Dataclasses"
+    },
+    {
+      "question": "How do I enforce that a string field must be a valid URL in a Pydantic model?",
+      "file": "tutorial/body-nested-models.md",
+      "heading": "Special types and validation",
+      "rank": 1,
+      "top_result": "tutorial/body-nested-models.md | Special types and validation"
+    },
+    {
+      "question": "What error behavior occurs when the frontend build directory is missing in production, and how can I adjust it?",
+      "file": "tutorial/frontend.md",
+      "heading": "Check Directory",
+      "rank": 1,
+      "top_result": "tutorial/frontend.md | Check Directory"
+    },
+    {
+      "question": "How can I exclude the password field from being sent back in an API response?",
+      "file": "tutorial/response-model.md",
+      "heading": "Add an output model",
+      "rank": null,
+      "top_result": "tutorial/security/first-steps.md | The `password` flow"
+    },
+    {
+      "question": "Is it possible to use Depends and similar dependencies in a WebSocket endpoint, and which exception should be raised on failure?",
+      "file": "advanced/websockets.md",
+      "heading": "Using `Depends` and others",
+      "rank": 9,
+      "top_result": "tutorial/dependencies/dependencies-with-yield.md | Dependencies with `yield` and `HTTPException`"
+    },
+    {
+      "question": "What steps are needed to integrate a Flask app into FastAPI using the current WSGI middleware package?",
+      "file": "advanced/wsgi.md",
+      "heading": "Using `WSGIMiddleware`",
+      "rank": 1,
+      "top_result": "advanced/wsgi.md | Using `WSGIMiddleware`"
+    },
+    {
+      "question": "How do I add a custom request body schema to a FastAPI route without using a Pydantic model?",
+      "file": "advanced/path-operation-advanced-configuration.md",
+      "heading": "Custom OpenAPI *path operation* schema",
+      "rank": 2,
+      "top_result": "advanced/path-operation-advanced-configuration.md | Custom OpenAPI content type"
+    },
+    {
+      "question": "How can I enforce specific OAuth scopes on a FastAPI endpoint using Security?",
+      "file": "advanced/security/oauth2-scopes.md",
+      "heading": "Declare scopes in *path operations* and dependencies",
+      "rank": 5,
+      "top_result": "advanced/security/oauth2-scopes.md | OAuth2 scopes"
+    },
+    {
+      "question": "How do I create a new SQLModel record via a FastAPI endpoint and have it appear in the autogenerated docs?",
+      "file": "tutorial/sql-databases.md",
+      "heading": "Create a Hero",
+      "rank": 3,
+      "top_result": "tutorial/sql-databases.md | Create Models"
+    },
+    {
+      "question": "What is the way to add a global exception handler for a custom exception type in FastAPI?",
+      "file": "tutorial/handling-errors.md",
+      "heading": "Install custom exception handlers",
+      "rank": 1,
+      "top_result": "tutorial/handling-errors.md | Install custom exception handlers"
+    },
+    {
+      "question": "What happens to the response data when I don't provide a response_model in a FastAPI route?",
+      "file": "advanced/custom-response.md",
+      "heading": "JSON Responses",
+      "rank": 3,
+      "top_result": "advanced/response-directly.md | How a Response Model Works"
+    },
+    {
+      "question": "How can I prevent default field values from being sent back in a FastAPI response?",
+      "file": "tutorial/response-model.md",
+      "heading": "Use the `response_model_exclude_unset` parameter",
+      "rank": 10,
+      "top_result": "tutorial/sql-databases.md | Update a Hero with `HeroUpdate`"
+    },
+    {
+      "question": "What occurs when an exception is caught and not re\u2011raised inside a dependency that uses `yield`?",
+      "file": "tutorial/dependencies/dependencies-with-yield.md",
+      "heading": "Dependencies with `yield` and `except`",
+      "rank": 4,
+      "top_result": "advanced/advanced-dependencies.md | Dependencies with `yield` and `except`, Technical Details"
+    },
+    {
+      "question": "How can I safely compare a username and password containing Unicode characters using a FastAPI dependency?",
+      "file": "advanced/security/http-basic-auth.md",
+      "heading": "Check the username",
+      "rank": 1,
+      "top_result": "advanced/security/http-basic-auth.md | Check the username"
+    },
+    {
+      "question": "Why is it important to store only password hashes rather than plain passwords in a database?",
+      "file": "tutorial/security/oauth2-jwt.md",
+      "heading": "Why use password hashing",
+      "rank": 1,
+      "top_result": "tutorial/security/oauth2-jwt.md | Why use password hashing"
+    },
+    {
+      "question": "in FastAPI, what happens to an existing attribute's stored value if you omit it when updating an item with a PUT request?",
+      "file": "tutorial/body-updates.md",
+      "heading": "Warning about replacing",
+      "rank": 3,
+      "top_result": "tutorial/body-updates.md | Update replacing with `PUT`"
+    },
+    {
+      "question": "How can I specify the HTTP status code returned by a FastAPI route?",
+      "file": "tutorial/response-status-code.md",
+      "heading": "Response Status Code",
+      "rank": 1,
+      "top_result": "tutorial/response-status-code.md | Response Status Code"
+    },
+    {
+      "question": "How can I include required OAuth scopes in the WWW-Authenticate header when raising an HTTPException?",
+      "file": "advanced/security/oauth2-scopes.md",
+      "heading": "Use the `scopes`",
+      "rank": 1,
+      "top_result": "advanced/security/oauth2-scopes.md | Use the `scopes`"
+    },
+    {
+      "question": "Which HTTP status codes indicate client\u2011side errors like insufficient permissions or missing resources?",
+      "file": "tutorial/handling-errors.md",
+      "heading": "Handling Errors",
+      "rank": 2,
+      "top_result": "tutorial/response-status-code.md | About HTTP status codes"
+    },
+    {
+      "question": "How do I add a description and external documentation link to an OpenAPI tag in FastAPI?",
+      "file": "tutorial/metadata.md",
+      "heading": "Metadata for tags",
+      "rank": 1,
+      "top_result": "tutorial/metadata.md | Metadata for tags"
+    },
+    {
+      "question": "Why should I set check_same_thread=False when creating a SQLite engine for a FastAPI app?",
+      "file": "tutorial/sql-databases.md",
+      "heading": "Create an Engine",
+      "rank": 1,
+      "top_result": "tutorial/sql-databases.md | Create an Engine"
+    },
+    {
+      "question": "Do I need to finish the basic tutorial before exploring the advanced FastAPI guide?",
+      "file": "tutorial/index.md",
+      "heading": "Advanced User Guide",
+      "rank": 1,
+      "top_result": "tutorial/index.md | Advanced User Guide"
+    },
+    {
+      "question": "Is the \"trust the network\" security risk applicable to APIs that are publicly exposed on the internet?",
+      "file": "advanced/strict-content-type.md",
+      "heading": "Open Internet",
+      "rank": 1,
+      "top_result": "advanced/strict-content-type.md | Open Internet"
+    },
+    {
+      "question": "Why should I use Annotated for parameter definitions instead of plain default values in FastAPI?",
+      "file": "tutorial/query-params-str-validations.md",
+      "heading": "Advantages of `Annotated`",
+      "rank": 2,
+      "top_result": "tutorial/query-params-str-validations.md | `Query` as the default value or in `Annotated`"
+    },
+    {
+      "question": "How can I declare a query parameter so that it is optional and receives None when the client omits it?",
+      "file": "tutorial/query-params-str-validations.md",
+      "heading": "Required parameters and `None`",
+      "rank": 9,
+      "top_result": "advanced/advanced-python-types.md | Using `Union` or `Optional`"
+    },
+    {
+      "question": "What is the proper way to obtain the current root_path for a request and how should I configure it in the latest FastAPI?",
+      "file": "advanced/behind-a-proxy.md",
+      "heading": "Checking the current `root_path`",
+      "rank": 5,
+      "top_result": "advanced/sub-applications.md | Technical Details: `root_path`"
+    },
+    {
+      "question": "How do I return an XML payload from a FastAPI endpoint using a custom Response?",
+      "file": "advanced/response-directly.md",
+      "heading": "Returning a custom `Response`",
+      "rank": 1,
+      "top_result": "advanced/response-directly.md | Returning a custom `Response`"
+    },
+    {
+      "question": "How do I simulate a file using an in\u2011memory BytesIO object and ensure it closes after the response?",
+      "file": "advanced/stream-data.md",
+      "heading": "Simulate a File",
+      "rank": 1,
+      "top_result": "advanced/stream-data.md | Simulate a File"
+    },
+    {
+      "question": "How can I retrieve the security scopes inside a dependency without using the Security wrapper?",
+      "file": "advanced/security/oauth2-scopes.md",
+      "heading": "Use `SecurityScopes`",
+      "rank": 4,
+      "top_result": "advanced/security/oauth2-scopes.md | Declare scopes in *path operations* and dependencies"
+    },
+    {
+      "question": "How can I add extra server URLs like staging and production to the OpenAPI schema while preserving the root_path server?",
+      "file": "advanced/behind-a-proxy.md",
+      "heading": "Additional servers",
+      "rank": 1,
+      "top_result": "advanced/behind-a-proxy.md | Additional servers"
+    },
+    {
+      "question": "Do I need to arrange function parameters in a specific order when mixing required query and path arguments without using Annotated?",
+      "file": "tutorial/path-params-numeric-validations.md",
+      "heading": "Order the parameters as you need",
+      "rank": 1,
+      "top_result": "tutorial/path-params-numeric-validations.md | Order the parameters as you need"
+    },
+    {
+      "question": "How can I indicate that a query parameter is deprecated so it shows up that way in the documentation?",
+      "file": "tutorial/query-params-str-validations.md",
+      "heading": "Deprecating parameters",
+      "rank": null,
+      "top_result": "tutorial/query-params-str-validations.md | Alternative (old): `Query` as the default value"
+    },
+    {
+      "question": "What is the way to accept multiple values for the same query parameter as a list in FastAPI?",
+      "file": "tutorial/query-params-str-validations.md",
+      "heading": "Query parameter list / multiple values",
+      "rank": 1,
+      "top_result": "tutorial/query-params-str-validations.md | Query parameter list / multiple values"
+    },
+    {
+      "question": "What distinguishes FastAPI's HTTPException from Starlette's, and which one should I register an exception handler for?",
+      "file": "tutorial/handling-errors.md",
+      "heading": "FastAPI's `HTTPException` vs Starlette's `HTTPException`",
+      "rank": 1,
+      "top_result": "tutorial/handling-errors.md | FastAPI's `HTTPException` vs Starlette's `HTTPException`"
+    },
+    {
+      "question": "Why is using a wildcard for allowed origins not recommended and what should I specify instead?",
+      "file": "tutorial/cors.md",
+      "heading": "Wildcards",
+      "rank": 1,
+      "top_result": "tutorial/cors.md | Wildcards"
+    }
+  ]
+}
