@@ -1,3 +1,4 @@
+![CI](https://github.com/kpoplibe24-netizen/rag-eval-lab/actions/workflows/eval.yml/badge.svg)
 # rag-eval-lab
 
 A RAG evaluation framework built over the FastAPI documentation. It compares BM25, dense, hybrid, and reranked retrieval strategies using a manually verified evaluation dataset.
