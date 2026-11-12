@@ -1,0 +1,10 @@
+@"
+.venv
+.git
+chroma_db
+*.db
+__pycache__
+.github
+results/*.json
+!results/chosen_threshold.json
+"@ | Set-Content .dockerignore
