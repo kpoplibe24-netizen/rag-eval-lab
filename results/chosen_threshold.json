@@ -1,0 +1,4 @@
+{
+    "threshold": 3.527,
+    "reason": "Selected using the best balanced score on the current evaluation dataset. It correctly refuses 12 of 15 unanswerable questions while wrongly refusing 15 of 100 answerable questions."
+}

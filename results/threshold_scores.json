@@ -1,0 +1,692 @@
+[
+  {
+    "question": "How can I return a custom JSON response in FastAPI?",
+    "answerable": true,
+    "top_score": 9.495467185974121,
+    "top_result": "advanced/custom-response.md | Custom Response - HTML, Stream, File, others"
+  },
+  {
+    "question": "Why are FastAPI trailing slash paths resolved to HTTP localhost instead of my secure domain?",
+    "answerable": true,
+    "top_score": -2.8513975143432617,
+    "top_result": "advanced/wsgi.md | Check it"
+  },
+  {
+    "question": "How can I apply a dependency to every endpoint in my FastAPI application?",
+    "answerable": true,
+    "top_score": 3.8879356384277344,
+    "top_result": "tutorial/dependencies/global-dependencies.md | Global Dependencies"
+  },
+  {
+    "question": "How does the `extra` configuration behave when using multiple cookie definition models?",
+    "answerable": true,
+    "top_score": 6.743003845214844,
+    "top_result": "tutorial/cookie-param-models.md | Combine Parameter Models"
+  },
+  {
+    "question": "How do I make a single request body parameter appear nested under its own key in FastAPI?",
+    "answerable": true,
+    "top_score": 4.092506408691406,
+    "top_result": "tutorial/body-multiple-params.md | Embed a single body parameter"
+  },
+  {
+    "question": "How does `SecurityScopes` collect all security scopes declared in a dependency tree?",
+    "answerable": true,
+    "top_score": 8.295330047607422,
+    "top_result": "advanced/security/oauth2-scopes.md | More details about `SecurityScopes`"
+  },
+  {
+    "question": "Can I define more than one response for a FastAPI path operation?",
+    "answerable": true,
+    "top_score": 4.488244533538818,
+    "top_result": "tutorial/path-operation-configuration.md | Response description"
+  },
+  {
+    "question": "What is the name for when my app sends requests to a user's app to notify them of an event?",
+    "answerable": true,
+    "top_score": 6.308226585388184,
+    "top_result": "advanced/openapi-webhooks.md | OpenAPI Webhooks"
+  },
+  {
+    "question": "How does FastAPI recognize and handle a path operation that returns a `Response` object directly?",
+    "answerable": true,
+    "top_score": 6.7092695236206055,
+    "top_result": "advanced/response-directly.md | Return a Response Directly"
+  },
+  {
+    "question": "How does FastAPI 0.110.0 affect automatic exception forwarding from `yield` dependencies that catch but don't re-raise an error?",
+    "answerable": true,
+    "top_score": 7.345357418060303,
+    "top_result": "advanced/advanced-dependencies.md | Dependencies with `yield` and `except`, Technical Details"
+  },
+  {
+    "question": "How can I define a custom response type in FastAPI?",
+    "answerable": true,
+    "top_score": 6.021958351135254,
+    "top_result": "advanced/custom-response.md | Custom Response - HTML, Stream, File, others"
+  },
+  {
+    "question": "What automatic processing is not applied when a `Response` object is returned directly?",
+    "answerable": true,
+    "top_score": 6.550734996795654,
+    "top_result": "advanced/response-directly.md | Notes"
+  },
+  {
+    "question": "How do I start a minimal FastAPI application and identify the local URL where the server is running?",
+    "answerable": true,
+    "top_score": 1.8075428009033203,
+    "top_result": "advanced/behind-a-proxy.md | Proxy with a stripped path prefix"
+  },
+  {
+    "question": "What is the effect of using Depends with scope='function' versus the default request scope when using yield?",
+    "answerable": true,
+    "top_score": 6.089027404785156,
+    "top_result": "advanced/advanced-dependencies.md | Dependencies with `yield` and `scope`"
+  },
+  {
+    "question": "Do I have to invoke FastAPI path operation functions myself, or does the framework handle that?",
+    "answerable": true,
+    "top_score": 4.27898645401001,
+    "top_result": "tutorial/dependencies/index.md | Simple usage"
+  },
+  {
+    "question": "How can I specify a custom operationId for an endpoint in FastAPI?",
+    "answerable": true,
+    "top_score": 3.618244171142578,
+    "top_result": "advanced/path-operation-advanced-configuration.md | Using the *path operation function* name as the operationId"
+  },
+  {
+    "question": "How do I add a title metadata field to a path parameter in FastAPI?",
+    "answerable": true,
+    "top_score": 5.6908183097839355,
+    "top_result": "tutorial/path-params-numeric-validations.md | Declare metadata"
+  },
+  {
+    "question": "How can I replace the default validation error response with my own handler?",
+    "answerable": true,
+    "top_score": 4.402775764465332,
+    "top_result": "tutorial/handling-errors.md | Override the default exception handlers"
+  },
+  {
+    "question": "How can I add a custom header that shows the processing time for each request?",
+    "answerable": true,
+    "top_score": 6.3916449546813965,
+    "top_result": "tutorial/middleware.md | Before and after the `response`"
+  },
+  {
+    "question": "What does FastAPI do with a dependency that uses yield internally?",
+    "answerable": true,
+    "top_score": 7.141589641571045,
+    "top_result": "tutorial/dependencies/dependencies-with-yield.md | Dependencies with yield"
+  },
+  {
+    "question": "How do I import router modules from a subpackage within my project?",
+    "answerable": true,
+    "top_score": 5.873558044433594,
+    "top_result": "tutorial/bigger-applications.md | How the importing works"
+  },
+  {
+    "question": "How can I set cookies when I return a response object directly?",
+    "answerable": true,
+    "top_score": 8.952197074890137,
+    "top_result": "advanced/response-cookies.md | Return a `Response` directly"
+  },
+  {
+    "question": "How do I declare a field as a list of strings in a model?",
+    "answerable": true,
+    "top_score": 5.317739963531494,
+    "top_result": "tutorial/body-nested-models.md | Declare a `list` with a type parameter"
+  },
+  {
+    "question": "How can I send a sequence of JSON objects from a FastAPI endpoint without returning the entire list at once?",
+    "answerable": true,
+    "top_score": 3.820119619369507,
+    "top_result": "tutorial/stream-json-lines.md | Stream JSON Lines with FastAPI"
+  },
+  {
+    "question": "What type annotation should I use to accept several files uploaded under the same form field in FastAPI?",
+    "answerable": true,
+    "top_score": 4.918905258178711,
+    "top_result": "tutorial/request-files.md | Multiple File Uploads"
+  },
+  {
+    "question": "Where should I place multiple example definitions so they appear in the Swagger UI for a particular path operation?",
+    "answerable": true,
+    "top_score": 5.297451972961426,
+    "top_result": "tutorial/schema-extra-example.md | OpenAPI-specific `examples`"
+  },
+  {
+    "question": "How do I add a custom description and example to a response while still using a response_model in FastAPI?",
+    "answerable": true,
+    "top_score": 7.025774955749512,
+    "top_result": "advanced/additional-responses.md | Combining information"
+  },
+  {
+    "question": "What imports are required to use `Annotated` with FastAPI query parameters, and from which FastAPI version is it supported?",
+    "answerable": true,
+    "top_score": 6.3037567138671875,
+    "top_result": "tutorial/query-params-str-validations.md | Import `Query` and `Annotated`"
+  },
+  {
+    "question": "How can I asynchronously read the contents of an uploaded file inside a FastAPI async path operation?",
+    "answerable": true,
+    "top_score": 3.504126787185669,
+    "top_result": "tutorial/request-files.md | `UploadFile`"
+  },
+  {
+    "question": "How can I document an external API that my service will call back to in the OpenAPI spec?",
+    "answerable": true,
+    "top_score": 6.281538009643555,
+    "top_result": "advanced/openapi-callbacks.md | OpenAPI Callbacks"
+  },
+  {
+    "question": "How can I use middleware in FastAPI to execute custom logic before a request reaches a path operation and after its response is generated?",
+    "answerable": true,
+    "top_score": 6.382063865661621,
+    "top_result": "tutorial/middleware.md | Before and after the `response`"
+  },
+  {
+    "question": "How can I register routes from separate `APIRouter` instances with the main FastAPI application?",
+    "answerable": true,
+    "top_score": 5.65645694732666,
+    "top_result": "tutorial/bigger-applications.md | Include an `APIRouter` in another"
+  },
+  {
+    "question": "How can I link to a static CSS file from within a template using FastAPI?",
+    "answerable": true,
+    "top_score": 7.613078594207764,
+    "top_result": "advanced/templates.md | Templates and static files"
+  },
+  {
+    "question": "When is it appropriate to use raw_data instead of data for a ServerSentEvent?",
+    "answerable": true,
+    "top_score": 6.40549898147583,
+    "top_result": "tutorial/server-sent-events.md | Raw Data"
+  },
+  {
+    "question": "How do I limit allowed host headers and enable www redirection using FastAPI middleware?",
+    "answerable": true,
+    "top_score": 5.136207103729248,
+    "top_result": "advanced/middleware.md | `TrustedHostMiddleware`"
+  },
+  {
+    "question": "How can I enforce a maximum length on an optional query parameter using Annotated?",
+    "answerable": true,
+    "top_score": 5.420055389404297,
+    "top_result": "tutorial/query-params-str-validations.md | Add `Query` to `Annotated` in the `q` parameter"
+  },
+  {
+    "question": "How do I generate a full URL for a path operation inside a Jinja2 template?",
+    "answerable": true,
+    "top_score": 6.5591630935668945,
+    "top_result": "advanced/templates.md | Template `url_for` Arguments"
+  },
+  {
+    "question": "What is the simplest way to serve a directory of static assets in FastAPI?",
+    "answerable": true,
+    "top_score": 2.7557263374328613,
+    "top_result": "tutorial/static-files.md | Static Files"
+  },
+  {
+    "question": "What types of data and special formats does FastAPI support for validation through Pydantic?",
+    "answerable": true,
+    "top_score": 4.707719802856445,
+    "top_result": "advanced/dataclasses.md | Using Dataclasses"
+  },
+  {
+    "question": "How can I configure FastAPI to use HTMLResponse as the default for all path operations?",
+    "answerable": true,
+    "top_score": 6.621354103088379,
+    "top_result": "advanced/custom-response.md | Default response class"
+  },
+  {
+    "question": "Why does FastAPI fail when I annotate a handler with a union that includes a type that isn\u2019t a Pydantic model?",
+    "answerable": true,
+    "top_score": 6.652989387512207,
+    "top_result": "tutorial/response-model.md | Invalid Return Type Annotations"
+  },
+  {
+    "question": "How can I swap out an external authentication dependency for a mock version in my FastAPI tests?",
+    "answerable": true,
+    "top_score": 4.033881664276123,
+    "top_result": "advanced/testing-dependencies.md | Use cases: external service"
+  },
+  {
+    "question": "Where can I access the raw OpenAPI JSON that FastAPI generates?",
+    "answerable": true,
+    "top_score": 6.478975296020508,
+    "top_result": "tutorial/first-steps.md | Check the `openapi.json`"
+  },
+  {
+    "question": "How do I add the scopes received in the token request to the JWT returned by the token endpoint?",
+    "answerable": true,
+    "top_score": 7.822587013244629,
+    "top_result": "advanced/security/oauth2-scopes.md | JWT token with scopes"
+  },
+  {
+    "question": "How does the request encoding differ between HTML form submissions with files and those without files in FastAPI?",
+    "answerable": true,
+    "top_score": 4.27119255065918,
+    "top_result": "tutorial/request-files.md | What is \"Form Data\""
+  },
+  {
+    "question": "Why do I encounter a 'Task attached to a different loop' RuntimeError when using async calls in my FastAPI tests?",
+    "answerable": true,
+    "top_score": 7.238826751708984,
+    "top_result": "advanced/async-tests.md | Other Asynchronous Function Calls"
+  },
+  {
+    "question": "How can I replace an existing item with a PUT request and ensure complex types like datetime are JSON\u2011compatible?",
+    "answerable": true,
+    "top_score": 4.0442352294921875,
+    "top_result": "tutorial/body-updates.md | Update replacing with `PUT`"
+  },
+  {
+    "question": "In a dependency that yields, how should I re\u2011raise a caught exception to preserve the original error response?",
+    "answerable": true,
+    "top_score": 6.973356246948242,
+    "top_result": "tutorial/dependencies/dependencies-with-yield.md | Always `raise` in Dependencies with `yield` and `except`"
+  },
+  {
+    "question": "Where can I view the request and response schemas generated from my FastAPI models in the interactive API documentation?",
+    "answerable": true,
+    "top_score": 4.92866325378418,
+    "top_result": "advanced/generate-clients.md | API Docs"
+  },
+  {
+    "question": "What is dependency injection in FastAPI and why is it useful?",
+    "answerable": true,
+    "top_score": 7.895617485046387,
+    "top_result": "tutorial/dependencies/index.md | What is \"Dependency Injection\""
+  },
+  {
+    "question": "How do I create and use a Settings dependency in my FastAPI application?",
+    "answerable": true,
+    "top_score": 4.833028793334961,
+    "top_result": "advanced/testing-dependencies.md | Use the `app.dependency_overrides` attribute"
+  },
+  {
+    "question": "How can I serve a compiled frontend directory with FastAPI?",
+    "answerable": true,
+    "top_score": 5.926101207733154,
+    "top_result": "tutorial/frontend.md | Serve a Frontend"
+  },
+  {
+    "question": "What decorator should I use to handle GET requests to the root path?",
+    "answerable": true,
+    "top_score": 3.798206329345703,
+    "top_result": "tutorial/first-steps.md | Define a *path operation decorator*"
+  },
+  {
+    "question": "What are the steps of the OAuth2 password flow for obtaining a token in FastAPI?",
+    "answerable": true,
+    "top_score": 4.996838569641113,
+    "top_result": "tutorial/security/first-steps.md | The `password` flow"
+  },
+  {
+    "question": "How can I convert a Pydantic model to a JSON\u2011compatible dict with FastAPI?",
+    "answerable": true,
+    "top_score": 7.3962836265563965,
+    "top_result": "advanced/response-directly.md | Using the `jsonable_encoder` in a `Response`"
+  },
+  {
+    "question": "In FastAPI, when multiple middlewares are added, which one runs first on an incoming request?",
+    "answerable": true,
+    "top_score": 5.4537672996521,
+    "top_result": "tutorial/middleware.md | Multiple middleware execution order"
+  },
+  {
+    "question": "How can I use the response_class parameter in a FastAPI path operation decorator to return a non-JSON response?",
+    "answerable": true,
+    "top_score": 6.898705959320068,
+    "top_result": "advanced/custom-response.md | Custom Response - HTML, Stream, File, others"
+  },
+  {
+    "question": "Why does FastAPI ignore X-Forwarded-For and similar headers unless a trusted proxy is configured?",
+    "answerable": true,
+    "top_score": 4.247200965881348,
+    "top_result": "advanced/behind-a-proxy.md | Proxy Forwarded Headers"
+  },
+  {
+    "question": "Can FastAPI automatically convert request headers into a Pydantic model?",
+    "answerable": true,
+    "top_score": 5.825030326843262,
+    "top_result": "advanced/path-operation-advanced-configuration.md | Custom OpenAPI *path operation* schema"
+  },
+  {
+    "question": "What must I do to make a Pydantic model JSON\u2011serializable before returning it in a JSONResponse?",
+    "answerable": true,
+    "top_score": 6.06318473815918,
+    "top_result": "advanced/response-directly.md | Using the `jsonable_encoder` in a `Response`"
+  },
+  {
+    "question": "How do I give a query parameter a default string value while keeping it optional?",
+    "answerable": true,
+    "top_score": 7.045544624328613,
+    "top_result": "tutorial/query-params-str-validations.md | Required parameters and `None`"
+  },
+  {
+    "question": "How can I move my FastAPI configuration into a separate Python module?",
+    "answerable": true,
+    "top_score": 2.397956132888794,
+    "top_result": "tutorial/debugging.md | Run your code with your debugger"
+  },
+  {
+    "question": "What is a way to share security and dependency logic across many FastAPI routes without repeating code?",
+    "answerable": true,
+    "top_score": 4.233193397521973,
+    "top_result": "tutorial/dependencies/index.md | What is \"Dependency Injection\""
+  },
+  {
+    "question": "Will FastAPI return fields that have default values when they are explicitly provided in the request?",
+    "answerable": true,
+    "top_score": 3.960453510284424,
+    "top_result": "tutorial/handling-errors.md | Override the default exception handlers"
+  },
+  {
+    "question": "How can I apply a PATCH request to update only the fields supplied by the client on a SQLModel object?",
+    "answerable": true,
+    "top_score": 1.5106074810028076,
+    "top_result": "tutorial/sql-databases.md | Update a Hero with `HeroUpdate`"
+  },
+  {
+    "question": "What should I do if using regular dataclasses breaks FastAPI's generated OpenAPI docs?",
+    "answerable": true,
+    "top_score": 3.202359199523926,
+    "top_result": "advanced/custom-response.md | Custom Response - HTML, Stream, File, others"
+  },
+  {
+    "question": "How do I enforce that a string field must be a valid URL in a Pydantic model?",
+    "answerable": true,
+    "top_score": 2.5609958171844482,
+    "top_result": "advanced/json-base64-bytes.md | Pydantic `bytes`"
+  },
+  {
+    "question": "What error behavior occurs when the frontend build directory is missing in production, and how can I adjust it?",
+    "answerable": true,
+    "top_score": 4.431102752685547,
+    "top_result": "tutorial/frontend.md | Check Directory"
+  },
+  {
+    "question": "How can I exclude the password field from being sent back in an API response?",
+    "answerable": true,
+    "top_score": -0.34777241945266724,
+    "top_result": "tutorial/security/simple-oauth2.md | Get the `username` and `password`"
+  },
+  {
+    "question": "Is it possible to use Depends and similar dependencies in a WebSocket endpoint, and which exception should be raised on failure?",
+    "answerable": true,
+    "top_score": 3.6034598350524902,
+    "top_result": "advanced/websockets.md | Using `Depends` and others"
+  },
+  {
+    "question": "What steps are needed to integrate a Flask app into FastAPI using the current WSGI middleware package?",
+    "answerable": true,
+    "top_score": 4.603085994720459,
+    "top_result": "advanced/wsgi.md | Using `WSGIMiddleware`"
+  },
+  {
+    "question": "How do I add a custom request body schema to a FastAPI route without using a Pydantic model?",
+    "answerable": true,
+    "top_score": 7.251885414123535,
+    "top_result": "advanced/path-operation-advanced-configuration.md | Custom OpenAPI *path operation* schema"
+  },
+  {
+    "question": "How can I enforce specific OAuth scopes on a FastAPI endpoint using Security?",
+    "answerable": true,
+    "top_score": 5.314362049102783,
+    "top_result": "advanced/security/oauth2-scopes.md | OAuth2 scopes"
+  },
+  {
+    "question": "How do I create a new SQLModel record via a FastAPI endpoint and have it appear in the autogenerated docs?",
+    "answerable": true,
+    "top_score": -0.5135220289230347,
+    "top_result": "tutorial/index.md | Install FastAPI"
+  },
+  {
+    "question": "What is the way to add a global exception handler for a custom exception type in FastAPI?",
+    "answerable": true,
+    "top_score": 7.7332892417907715,
+    "top_result": "tutorial/handling-errors.md | Install custom exception handlers"
+  },
+  {
+    "question": "What happens to the response data when I don't provide a response_model in a FastAPI route?",
+    "answerable": true,
+    "top_score": 6.077513694763184,
+    "top_result": "advanced/custom-response.md | JSON Responses"
+  },
+  {
+    "question": "How can I prevent default field values from being sent back in a FastAPI response?",
+    "answerable": true,
+    "top_score": 2.567477226257324,
+    "top_result": "tutorial/handling-errors.md | Override the default exception handlers"
+  },
+  {
+    "question": "What occurs when an exception is caught and not re\u2011raised inside a dependency that uses `yield`?",
+    "answerable": true,
+    "top_score": 6.212968349456787,
+    "top_result": "tutorial/dependencies/dependencies-with-yield.md | Dependencies with `yield` and `except`"
+  },
+  {
+    "question": "How can I safely compare a username and password containing Unicode characters using a FastAPI dependency?",
+    "answerable": true,
+    "top_score": 4.114300727844238,
+    "top_result": "advanced/security/http-basic-auth.md | Check the username"
+  },
+  {
+    "question": "Why is it important to store only password hashes rather than plain passwords in a database?",
+    "answerable": true,
+    "top_score": 4.712152481079102,
+    "top_result": "tutorial/security/oauth2-jwt.md | Why use password hashing"
+  },
+  {
+    "question": "in FastAPI, what happens to an existing attribute's stored value if you omit it when updating an item with a PUT request?",
+    "answerable": true,
+    "top_score": -1.275296926498413,
+    "top_result": "advanced/testing-dependencies.md | Use the `app.dependency_overrides` attribute"
+  },
+  {
+    "question": "How can I specify the HTTP status code returned by a FastAPI route?",
+    "answerable": true,
+    "top_score": 6.555087089538574,
+    "top_result": "tutorial/response-status-code.md | Response Status Code"
+  },
+  {
+    "question": "How can I include required OAuth scopes in the WWW-Authenticate header when raising an HTTPException?",
+    "answerable": true,
+    "top_score": 3.3943867683410645,
+    "top_result": "advanced/security/oauth2-scopes.md | Verify the `scopes`"
+  },
+  {
+    "question": "Which HTTP status codes indicate client\u2011side errors like insufficient permissions or missing resources?",
+    "answerable": true,
+    "top_score": 4.411282539367676,
+    "top_result": "tutorial/handling-errors.md | Handling Errors"
+  },
+  {
+    "question": "How do I add a description and external documentation link to an OpenAPI tag in FastAPI?",
+    "answerable": true,
+    "top_score": 5.187061309814453,
+    "top_result": "tutorial/metadata.md | Metadata for tags"
+  },
+  {
+    "question": "Why should I set check_same_thread=False when creating a SQLite engine for a FastAPI app?",
+    "answerable": true,
+    "top_score": 5.952363967895508,
+    "top_result": "tutorial/sql-databases.md | Create an Engine"
+  },
+  {
+    "question": "Do I need to finish the basic tutorial before exploring the advanced FastAPI guide?",
+    "answerable": true,
+    "top_score": 1.870338797569275,
+    "top_result": "advanced/index.md | Additional Features"
+  },
+  {
+    "question": "Is the \"trust the network\" security risk applicable to APIs that are publicly exposed on the internet?",
+    "answerable": true,
+    "top_score": 4.495265960693359,
+    "top_result": "advanced/strict-content-type.md | Open Internet"
+  },
+  {
+    "question": "Why should I use Annotated for parameter definitions instead of plain default values in FastAPI?",
+    "answerable": true,
+    "top_score": 6.760776042938232,
+    "top_result": "tutorial/query-params-str-validations.md | Advantages of `Annotated`"
+  },
+  {
+    "question": "How can I declare a query parameter so that it is optional and receives None when the client omits it?",
+    "answerable": true,
+    "top_score": 7.48465633392334,
+    "top_result": "tutorial/query-params.md | Optional parameters"
+  },
+  {
+    "question": "What is the proper way to obtain the current root_path for a request and how should I configure it in the latest FastAPI?",
+    "answerable": true,
+    "top_score": 4.796773910522461,
+    "top_result": "advanced/behind-a-proxy.md | Checking the current `root_path`"
+  },
+  {
+    "question": "How do I return an XML payload from a FastAPI endpoint using a custom Response?",
+    "answerable": true,
+    "top_score": 6.994166374206543,
+    "top_result": "advanced/response-directly.md | Returning a custom `Response`"
+  },
+  {
+    "question": "How do I simulate a file using an in\u2011memory BytesIO object and ensure it closes after the response?",
+    "answerable": true,
+    "top_score": 4.15330696105957,
+    "top_result": "advanced/stream-data.md | Simulate a File"
+  },
+  {
+    "question": "How can I retrieve the security scopes inside a dependency without using the Security wrapper?",
+    "answerable": true,
+    "top_score": 2.8621997833251953,
+    "top_result": "advanced/security/oauth2-scopes.md | Declare scopes in *path operations* and dependencies"
+  },
+  {
+    "question": "How can I add extra server URLs like staging and production to the OpenAPI schema while preserving the root_path server?",
+    "answerable": true,
+    "top_score": 5.776609897613525,
+    "top_result": "advanced/behind-a-proxy.md | Additional servers"
+  },
+  {
+    "question": "Do I need to arrange function parameters in a specific order when mixing required query and path arguments without using Annotated?",
+    "answerable": true,
+    "top_score": 5.119015693664551,
+    "top_result": "tutorial/path-params-numeric-validations.md | Order the parameters as you need"
+  },
+  {
+    "question": "How can I indicate that a query parameter is deprecated so it shows up that way in the documentation?",
+    "answerable": true,
+    "top_score": 4.331546783447266,
+    "top_result": "tutorial/query-params-str-validations.md | Deprecating parameters"
+  },
+  {
+    "question": "What is the way to accept multiple values for the same query parameter as a list in FastAPI?",
+    "answerable": true,
+    "top_score": 6.52961540222168,
+    "top_result": "tutorial/query-params-str-validations.md | Query parameter list / multiple values"
+  },
+  {
+    "question": "What distinguishes FastAPI's HTTPException from Starlette's, and which one should I register an exception handler for?",
+    "answerable": true,
+    "top_score": 7.484979629516602,
+    "top_result": "tutorial/handling-errors.md | FastAPI's `HTTPException` vs Starlette's `HTTPException`"
+  },
+  {
+    "question": "Why is using a wildcard for allowed origins not recommended and what should I specify instead?",
+    "answerable": true,
+    "top_score": 5.688232421875,
+    "top_result": "tutorial/cors.md | Wildcards"
+  },
+  {
+    "question": "How do I define database models using Django ORM?",
+    "answerable": false,
+    "top_score": -0.7314523458480835,
+    "top_result": "features.md | Pydantic features"
+  },
+  {
+    "question": "How can I register and organize Blueprints in Flask?",
+    "answerable": false,
+    "top_score": -0.35946375131607056,
+    "top_result": "tutorial/bigger-applications.md | Bigger Applications - Multiple Files"
+  },
+  {
+    "question": "How do I implement authentication using Laravel Sanctum?",
+    "answerable": false,
+    "top_score": -6.419234752655029,
+    "top_result": "advanced/security/oauth2-scopes.md | About third party integrations"
+  },
+  {
+    "question": "How can I create database migrations using Django's migration system?",
+    "answerable": false,
+    "top_score": 1.9709830284118652,
+    "top_result": "tutorial/sql-databases.md | Create Database Tables on Startup"
+  },
+  {
+    "question": "How do I implement middleware in Express.js to validate incoming requests?",
+    "answerable": false,
+    "top_score": 3.3819923400878906,
+    "top_result": "tutorial/middleware.md | Create a middleware"
+  },
+  {
+    "question": "How can I use Celery with Redis to execute background tasks asynchronously in FastAPI?",
+    "answerable": false,
+    "top_score": 4.620455741882324,
+    "top_result": "tutorial/background-tasks.md | Caveat"
+  },
+  {
+    "question": "How do I implement rate limiting using the SlowAPI library in FastAPI?",
+    "answerable": false,
+    "top_score": -0.38965195417404175,
+    "top_result": "advanced/opentelemetry.md | Configure providers and exporters"
+  },
+  {
+    "question": "How can I deploy a FastAPI application to Heroku?",
+    "answerable": false,
+    "top_score": 5.634816646575928,
+    "top_result": "tutorial/first-steps.md | Deploy your app (optional)"
+  },
+  {
+    "question": "How do I configure Alembic to automatically manage database migrations in a FastAPI project?",
+    "answerable": false,
+    "top_score": 3.346532106399536,
+    "top_result": "advanced/opentelemetry.md | Configure providers and exporters"
+  },
+  {
+    "question": "How can I use Redis as a distributed caching layer for FastAPI endpoints?",
+    "answerable": false,
+    "top_score": -0.6361472606658936,
+    "top_result": "advanced/websockets.md | Using `Depends` and others"
+  },
+  {
+    "question": "How can I implement automatic token refresh using refresh tokens in FastAPI's OAuth2 authentication flow?",
+    "answerable": false,
+    "top_score": 2.428223133087158,
+    "top_result": "tutorial/security/first-steps.md | **FastAPI**'s `OAuth2PasswordBearer`"
+  },
+  {
+    "question": "How do I configure a FastAPI application to authenticate users through Google OAuth2 login?",
+    "answerable": false,
+    "top_score": 4.112939834594727,
+    "top_result": "advanced/security/oauth2-scopes.md | OAuth2 scopes"
+  },
+  {
+    "question": "How can I implement distributed WebSocket communication across multiple FastAPI server instances using Redis Pub/Sub?",
+    "answerable": false,
+    "top_score": 0.8554238080978394,
+    "top_result": "advanced/websockets.md | Handling disconnections and multiple clients"
+  },
+  {
+    "question": "How do I automatically upload files received by a FastAPI endpoint to an AWS S3 bucket?",
+    "answerable": false,
+    "top_score": 0.3978084325790405,
+    "top_result": "advanced/opentelemetry.md | Configure providers and exporters"
+  },
+  {
+    "question": "How can I configure a FastAPI application to run scheduled recurring tasks using APScheduler?",
+    "answerable": false,
+    "top_score": -0.010757561773061752,
+    "top_result": "advanced/opentelemetry.md | Configure providers and exporters"
+  }
+]
