@@ -3,7 +3,13 @@ from groq import AsyncGroq
 import config
 
 
-client = AsyncGroq(timeout=30.0)
+client = None
+
+def get_client():
+    global client
+    if client is None:
+        client = AsyncGroq(timeout=30.0)
+    return client
 
 
 SYSTEM_PROMPT = """
@@ -42,7 +48,7 @@ async def generate_answer(question, chunks):
 
     context = build_context(chunks)
 
-    response = await client.chat.completions.create(
+    response = await get_client().chat.completions.create(
         model=config.LLM_MODEL,
         messages=[
             {
