@@ -1,0 +1,182 @@
+[
+  {
+    "file": "advanced/advanced-dependencies.md",
+    "heading": "Use Cases with Early Exit Code",
+    "question": "How can I prevent a FastAPI dependency from keeping a database session open longer than needed during a slow response?",
+    "answerable": true
+  },
+  {
+    "file": "advanced/response-cookies.md",
+    "heading": "Use a `Response` parameter",
+    "question": "How to set HTTP cookies or headers in FastAPI?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/debugging.md",
+    "heading": "More details",
+    "question": "When does `if __name__ == \"__main__\":` execute in a Python script?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/extra-models.md",
+    "heading": "Unpacking a `dict`",
+    "question": "How can I pass a dictionary's contents as keyword arguments to a function?",
+    "answerable": true
+  },
+  {
+    "file": "advanced/response-change-status-code.md",
+    "heading": "Use a `Response` parameter",
+    "question": "How do I change the status code from within a route function using FastAPI?",
+    "answerable": true
+  },
+  {
+    "file": "advanced/events.md",
+    "heading": "Lifespan Events",
+    "question": "Where can I place code that runs once when the FastAPI app starts and shuts down?",
+    "answerable": true
+  },
+  {
+    "file": "advanced/websockets.md",
+    "heading": "In production",
+    "question": "What is a minimal way to test WebSocket endpoints in FastAPI without a full frontend setup?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/path-params.md",
+    "heading": "Data validation",
+    "question": "What error is returned if a non\u2011integer value is passed to an endpoint expecting an int path parameter?",
+    "answerable": true
+  },
+  {
+    "file": "features.md",
+    "heading": "Editor support",
+    "question": "Does FastAPI provide autocompletion support in popular editors like VS Code and PyCharm?",
+    "answerable": true
+  },
+  {
+    "file": "advanced/custom-response.md",
+    "heading": "Return an `HTMLResponse` directly",
+    "question": "How can I return an HTMLResponse object from a FastAPI endpoint?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/response-model.md",
+    "heading": "`response_model` Parameter",
+    "question": "When should I use the response_model argument instead of a function return annotation?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/response-status-code.md",
+    "heading": "Shortcut to remember the names",
+    "question": "How can I use constants instead of memorizing HTTP status numbers like 201?",
+    "answerable": true
+  },
+  {
+    "file": "advanced/websockets.md",
+    "heading": "Try it",
+    "question": "How do I run a FastAPI WebSocket example and test it in the browser?",
+    "answerable": true
+  },
+  {
+    "file": "advanced/opentelemetry.md",
+    "heading": "Trace WebSocket connections",
+    "question": "Do normal WebSocket disconnect codes generate error logs in FastAPI?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/security/oauth2-jwt.md",
+    "heading": "Handle JWT tokens",
+    "question": "What are the steps to set up JWT token creation, including secret generation and token utility, in FastAPI?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/security/simple-oauth2.md",
+    "heading": "Check the password",
+    "question": "How can I verify a user's password against the stored hash in FastAPI?",
+    "answerable": true
+  },
+  {
+    "file": "advanced/openapi-callbacks.md",
+    "heading": "The normal **FastAPI** app",
+    "question": "How do I define a query parameter that must be a valid URL for a FastAPI route?",
+    "answerable": true
+  },
+  {
+    "file": "advanced/using-request-directly.md",
+    "heading": "Use the `Request` object directly",
+    "question": "How can I retrieve the client\u2019s IP address inside a FastAPI endpoint?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/header-params.md",
+    "heading": "Declare `Header` parameters",
+    "question": "What is the correct way to declare a required HTTP header parameter in a FastAPI path operation?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/index.md",
+    "heading": "AI Agent Skills",
+    "question": "How do I install the built\u2011in AI coding agent skill that comes with FastAPI?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/first-steps.md",
+    "heading": "Configure the app `entrypoint` in `pyproject.toml`",
+    "question": "Where should I define the module and variable for my FastAPI app so the `fastapi` CLI can start it?",
+    "answerable": true
+  },
+  {
+    "file": "advanced/openapi-callbacks.md",
+    "heading": "The callback path expression",
+    "question": "How can I use an OpenAPI expression to insert request parameters into a callback URL?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/security/index.md",
+    "heading": "OpenAPI",
+    "question": "Which authentication schemes can be described in the API specification that FastAPI builds its docs from?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/dependencies/index.md",
+    "heading": "Share `Annotated` dependencies",
+    "question": "What technique lets me reuse an Annotated dependency definition across many path operations?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/static-files.md",
+    "heading": "Details",
+    "question": "How do I mount a sub-application to serve static files from a specific directory with a custom mount path?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/bigger-applications.md",
+    "heading": "Bigger Applications - Multiple Files",
+    "question": "What FastAPI tool lets me organize a large application across several Python modules similar to Flask blueprints?",
+    "answerable": true
+  },
+  {
+    "file": "advanced/path-operation-advanced-configuration.md",
+    "heading": "Custom OpenAPI content type",
+    "question": "How can I declare a YAML request body but still generate a JSON schema for it using a Pydantic model?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/dependencies/index.md",
+    "heading": "Simple and Powerful",
+    "question": "How can I apply different permission checks to various endpoints by nesting dependencies?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/background-tasks.md",
+    "heading": "Add the background task",
+    "question": "How do I add a background task inside a path operation function using FastAPI?",
+    "answerable": true
+  },
+  {
+    "file": "tutorial/handling-errors.md",
+    "heading": "The resulting response",
+    "question": "If I request /items/foo and /items/bar, what HTTP status codes and JSON responses does FastAPI return?",
+    "answerable": true
+  }
+]
