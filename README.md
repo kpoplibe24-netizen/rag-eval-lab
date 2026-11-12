@@ -1,79 +1,88 @@
-![CI](https://github.com/kpoplibe24-netizen/rag-eval-lab/actions/workflows/eval.yml/badge.svg)
-# rag-eval-lab
+# RetrievalForge
 
-A RAG evaluation framework built over the FastAPI documentation. It compares BM25, dense, hybrid, and reranked retrieval strategies using a manually verified evaluation dataset.
+![CI](https://github.com/kpoplibe24-netizen/retrieval_forge/actions/workflows/eval.yml/badge.svg)
 
-## Evaluation Dataset
+A retrieval evaluation lab and QA service over the FastAPI documentation.
 
-The evaluation dataset contains 115 questions:
+It compares dense, BM25, hybrid and reranked retrieval on a hand-reviewed question set, then serves the pipeline through an async FastAPI app.
 
-- **100 answerable questions:** Each has a verified ground-truth source file and heading.
-- **15 unanswerable questions:** Designed to test whether the system can recognize queries that fall outside its knowledge base.
+## Results
 
-### Dataset Creation
+100 answerable questions, strict match on file + section heading (chunk size 200 words).
 
-- Extracted 520 eligible sections from the FastAPI documentation.
-- Randomly sampled 130 sections using a fixed random seed (`42`) for reproducibility.
-- Used Groq to generate one candidate question per sampled section.
-- Manually reviewed all 130 generated questions.
-- Retained 100 questions and rejected 30 due to weak grounding, generic wording, limited retrieval value, or insufficient support from the source section.
-- Manually created 15 unanswerable questions covering topics outside the documentation corpus and checked them against the local documentation.
+| Method | hit@1 | hit@5 | hit@10 | MRR |
+|---|---|---|---|---|
+| Dense (MiniLM) | 0.52 | 0.76 | 0.87 | 0.626 |
+| BM25 | 0.56 | 0.84 | 0.90 | 0.673 |
+| Hybrid (RRF) | 0.63 | 0.86 | 0.94 | 0.731 |
+| Hybrid + cross-encoder rerank | 0.69 | 0.89 | 0.94 | 0.770 |
 
-### Validation
+Chunk size (100/200/300 words, dense only) made little difference.
 
-The dataset was programmatically checked for:
+Full table: `results/ablation.md`.
 
-- Exact duplicate questions.
-- Missing or invalid source files.
-- Missing source headings.
-- Incorrect source references for unanswerable questions.
+### Findings
 
-**Results:** All ground-truth references passed validation, and no exact duplicate questions were found.
+- Hybrid achieved Hit@5 of 0.86 compared with 0.76 for dense retrieval.
+- BM25 was competitive with dense retrieval, plausibly because the documentation contains exact identifiers like `Depends` and `UploadFile`.
+- Reranking improved Hit@1 from 0.63 to 0.69 and MRR from 0.731 to 0.770.
+- Failure analysis identified near-misses, term collisions, vocabulary mismatches and weak questions. See `results/failure_analysis.md`.
 
-## Retrieval Method Comparison
+### Refusing out-of-scope questions
 
-Four retrieval strategies were evaluated using the same 100 answerable questions to compare retrieval accuracy and ranking quality.
+Questions whose best reranker score is below a threshold (3.527) are refused without calling the LLM.
 
-| Method | Chunk Size | Hit@1 | Hit@5 | Hit@10 | MRR | File Hit@5 |
-|---|---:|---:|---:|---:|---:|---:|
-| Dense | 100 | 0.45 | 0.73 | 0.83 | 0.5785 | 0.87 |
-| Dense | 200 | 0.52 | 0.76 | 0.87 | 0.6262 | 0.88 |
-| Dense | 300 | 0.51 | 0.75 | 0.85 | 0.6175 | 0.89 |
-| BM25 | 200 | 0.60 | 0.84 | 0.90 | 0.6732 | 0.93 |
-| Hybrid | 200 | 0.63 | 0.86 | 0.94 | 0.7312 | 0.94 |
-| Reranking | 200 | **0.69** | **0.89** | **0.94** | **0.7699** | **0.95** |
+On 15 hand-written out-of-scope questions, 12 were refused, and 15 of 100 in-scope questions were wrongly refused.
 
-### Observations
+The threshold was chosen on these same questions, so the numbers are optimistic.
 
-- Dense retrieval performed best with a chunk size of 200 words among the tested configurations.
-- BM25 outperformed dense retrieval on this evaluation dataset.
-- Hybrid retrieval improved ranking quality over both individual retrieval methods.
-- Reranking achieved the highest Hit@1 and MRR, indicating better placement of relevant sections near the top of the results.
-- Hybrid and reranking achieved the same Hit@10, suggesting both methods generally retrieve relevant content within their top results.
+## Service
 
-**Key takeaway:** Combining lexical and semantic retrieval, followed by CrossEncoder reranking, improved retrieval quality on this dataset. However, the additional latency of reranking must be considered.
+- `POST /ask`: answer with sources, `refused`, `cached`, `latency_ms`
+- `GET /health`, `GET /stats` (SQL aggregates over the query log)
+- Async handlers; CPU-bound retrieval runs in a worker thread
+- In-memory TTL cache: median 2188.67 ms uncached vs 0.03 ms cached (median of 8 questions, one laptop)
+- SQLite query log (`sql/analytics.sql`)
+- 20 pytest tests; CI also fails if hybrid Hit@5 or MRR drops below the baseline
 
-## Confidence-Based Abstention
+## How the evaluation set was made
 
-A retrieval system should not confidently answer questions that fall outside its knowledge base. To address this, a confidence-based abstention mechanism was implemented using the CrossEncoder reranking score.
+130 sections were sampled at random (seed 42) from sections with at least 40 words of real text.
 
-The system compares the highest reranking score against a configurable threshold:
+An LLM drafted questions, using Gemini for the first 15 and Groq `gpt-oss-120b` for the rest. Every retained question was manually reviewed.
 
-- If the score is greater than or equal to the threshold, the system permits answering.
-- If the score is below the threshold, the system abstains.
+The final evaluation set contains 100 answerable questions and 15 hand-written out-of-scope questions.
 
-The threshold was selected using a balanced score that considers both correct refusals and false refusals.
+The 15 out-of-scope questions were checked against the documentation by keyword search.
 
-**Selected threshold: 3.527**
+## Run it
 
-Results on the threshold-tuning dataset:
+```bash
+pip install -r requirements.txt
+python src/retrieve.py
+python src/evaluate.py --method hybrid --chunk 200
+```
 
-| Metric | Result |
-|---|---:|
-| Unanswerable questions correctly refused | 12/15 (80%) |
-| Answerable questions incorrectly refused | 15/100 (15%) |
-| Answerable questions allowed | 85/100 (85%) |
-| Unanswerable questions incorrectly allowed | 3/15 (20%) |
-| Balanced score | 0.825 |
+Set your Groq API key in PowerShell:
 
-The threshold is model- and dataset-specific. CrossEncoder scores are not calibrated probabilities, so the selected value should not be assumed to generalize to other datasets
+```powershell
+$env:GROQ_API_KEY="..."
+```
+
+Start the API:
+
+```bash
+uvicorn main:app --app-dir src --port 8000
+```
+
+## Limitations
+
+- One test set of 100 answerable questions, drafted from the section text, which may favor keyword methods.
+- Strict section matching counts near-misses on the right page as failures.
+- The cache is per-process and lost on restart.
+- Answer quality from the LLM is not evaluated, only retrieval.
+- The refusal threshold was selected and evaluated on the same dataset, making the reported refusal performance optimistic.
+
+## Data
+
+Documentation text from the FastAPI project (MIT licensed): https://github.com/fastapi/fastapi
